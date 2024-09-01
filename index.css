@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: chartreuse; */
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height:80px;
+    line-height: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.411);
+    align-items: center;
+}
+.logo{
+    font-size: 38px;
+    font-family:fantasy;
+    font-weight: 300;
+}
+header img{
+    width: 22px;
+}
+
+.hero{
+    width: 100%;
+    height: calc(100vh - 80px );
+    padding: 0px 30px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 100px;
+}
+.hero .img{
+    /* background-color: aqua; */
+    width: 50%;
+}
+.hero .img img{
+    width: 520px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+.hero .textContainer{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: green; */
+    padding-right: 10px;
+}
+.hero .textContainer .tag{
+    font-size: 20px;
+    background-color: #149f39;
+    padding: 5px 10px;
+    align-self: flex-start;
+    color: #fff;
+}
+.hero .textContainer h1{
+    font-size: 70px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+.hero .textContainer p{
+    font-size: 19px;
+    color: rgb(94, 92, 92);
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    align-self: flex-start;
+    background-color: #ffbf66e7;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    border-radius: 2px;
+}
+button:hover{
+    background-color: #ec9214ea;
+}
+
+.features{
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding:0 100px;
+    flex-wrap: wrap;
+}
+
+.features .f1,
+.features .f2,
+.features .f3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    text-transform: capitalize;
+    text-align: center;
+    /* background-color: rgb(32, 235, 63); */
+    height: auto;
+    padding: 10px 0;
+}
+.features img{
+    width: 140px;
+}
+.features span{
+    width: 80%;
+    background-color: aliceblue;
+} 
+
+/* divider */
+.divider{
+    border: 1px solid #ccc;
+    margin: 20px 50px;
+}
+
+.grid{
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.grid .contain{
+    text-align: center;
+    text-transform: capitalize;
+    /* background-color: rgb(31, 39, 196); */
+    margin-bottom: 50px;
+}
+.grid .contain button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: #149f39;
+    color: #fff;
+    margin-bottom: 40px ;
+    text-transform: capitalize;
+    font-family: Verdana;
+    border-radius: 2px;
+}
+
+.grid_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.grid_img{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-auto-rows: 200px;
+    grid-gap: 12px;
+    transition: all 0.5s ease-in-out;
+    /* background: green; */
+}
+.grid_img div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    border-radius: 5px;
+    background-position: center;
+    transition: 0.2s all ease-in-out;
+}
+.grid_img div:hover{
+    transform: scale(1.04);
+    transition: 0.2s all ease-in-out;
+}
+.grid .img1{
+    background-image: url('item1\ 1.png');
+    grid-row: 1/3 ;
+    grid-column: 1/3;
+}
+.grid .img2{
+    background-image: url('item2\ 1.png');
+    grid-row: 1/3;
+    grid-column: 3/3;
+}
+.grid .img4{
+    background-image: url('item4\ 1.png');
+    grid-row: 1/4;
+    grid-column: 4/4;
+}
+.grid .img5{
+    background-image: url('item5\ 1.png');
+    grid-row: 3/4;
+    grid-column: 1/1;
+}
+.grid .img6{
+    background-image: url('item6\ 1.png');
+    grid-row: 3/4;
+    grid-column: 2/2;
+}
+.grid .img7{
+    background-image: url('item7\ 1.png');
+    grid-row: 3/4;
+    grid-column: 3/3;
+}
+
+/* ----------footer------------- */
+footer{
+    width: 100%;
+    background: #fff0db;
+    padding: 50px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 20px;
+}
+footer h1.logo{
+    font-size: 38px;
+    font-family:fantasy;
+    font-weight: 300;
+}
+footer li{
+    list-style-type: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .link_list{
+    padding: 10px;
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+footer h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+footer input{
+    margin: 15px 0;
+    padding: 10px 60px 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    text-transform:capitalize;
+}
+
+@media (max-width:1270px) {
+    .grid_img{
+        grid-template-columns: repeat(4,230px);
+        grid-auto-rows: 180px;
+        grid-gap: 10px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+    footer .link_list{
+        width: 90%;
+    }
+    .news_letter{
+        width: 70%;
+        text-align: left;
+    }
+}
+@media (max-width:1065px) {
+    .hero{
+        flex-direction: column;
+        /* background-color:red; */
+        height: auto;
+        padding:50px 20px;
+        text-align: center;
+    }
+    .hero .img{
+        width: 100%;
+    }
+    .hero .textContainer{
+        /* background-color: green; */
+        text-align: left;
+        padding: 0 40px;
+    }
+    .grid_img{
+        grid-template-columns: repeat(4,120px);
+        grid-auto-rows: 120px;
+        grid-gap: 5px;
+        /* background: rgb(195, 214, 15); */
+    }
+
+}
+@media (max-width:555px) {
+    .hero .img img{
+        width:400px;
+    }
+    .features span{
+        width: 150%;
+    }
+    .grid_img{
+        grid-template-columns: repeat(4,80px);
+        grid-auto-rows: 80px;
+    }
+    footer .link_list{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media (max-width:440px) {
+    .hero .img img{
+        width:300px;
+    }
+}
